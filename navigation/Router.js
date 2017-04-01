@@ -1,13 +1,14 @@
 import { createRouter } from '@expo/ex-navigation';
 
+import MapScreen from '../screens/MapScreen';
 import HomeScreen from '../screens/HomeScreen';
-import LinksScreen from '../screens/LinksScreen';
+import ListScreen from '../screens/ListScreen';
 import SettingsScreen from '../screens/SettingsScreen';
 import RootNavigation from './RootNavigation';
 
 export default createRouter(() => ({
-  home: () => HomeScreen,
-  links: () => LinksScreen,
+  map: () => MapScreen,
+  list: () => ListScreen,
   settings: () => SettingsScreen,
   rootNavigation: () => RootNavigation,
 }));

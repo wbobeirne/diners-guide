@@ -24,17 +24,17 @@ export default class RootNavigation extends React.Component {
 
   render() {
     return (
-      <TabNavigation tabBarHeight={56} initialTab="home">
+      <TabNavigation tabBarHeight={56} initialTab="map">
         <TabNavigationItem
-          id="home"
+          id="map"
           renderIcon={isSelected => this._renderIcon('map-o', isSelected)}>
-          <StackNavigation initialRoute="home" />
+          <StackNavigation initialRoute="map" />
         </TabNavigationItem>
 
         <TabNavigationItem
-          id="links"
+          id="list"
           renderIcon={isSelected => this._renderIcon('list-ul', isSelected)}>
-          <StackNavigation initialRoute="links" />
+          <StackNavigation initialRoute="list" />
         </TabNavigationItem>
 
         <TabNavigationItem
