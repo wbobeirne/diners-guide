@@ -24,7 +24,7 @@ export default class RootNavigation extends React.Component {
 
   render() {
     return (
-      <TabNavigation tabBarHeight={56} initialTab="map">
+      <TabNavigation tabBarHeight={56} initialTab="list">
         <TabNavigationItem
           id="map"
           renderIcon={isSelected => this._renderIcon('map-o', isSelected)}>
